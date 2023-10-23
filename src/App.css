@@ -1,0 +1,125 @@
+body {
+  justify-content: center;
+  background-image: url("pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
+  color: hsl(223, 47%, 23%);
+}
+
+.mainContainer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 25px;
+  align-items: stretch;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.topImg {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 25px 25px 0 0;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 50px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.flex-item {
+  align-self: center;
+}
+
+.header1 {
+  font-weight: 900;
+  font-size: x-large;
+}
+
+.header2 {
+  font-weight: 900;
+}
+
+.outer-content {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  padding: 15px 0;
+}
+
+.inner-content {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.bottomImg {
+  grid-area: musicIcon;
+}
+
+.gridItem {
+  grid-area: annualPlan;
+  text-align: left;
+}
+
+.link {
+  grid-area: link;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subscription {
+  width: 100%;
+  display: grid;
+  margin: 0;
+  padding: 15px 0;
+  background-color: hsl(226, 48%, 95%);
+  border-radius: 10px;
+  grid-template-areas: "musicIcon annualPlan . . link";
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button1 {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button1:hover {
+  cursor: pointer;
+  background-color: hsl(245, 70%, 59%);
+}
+
+.button2 {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.button2:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
